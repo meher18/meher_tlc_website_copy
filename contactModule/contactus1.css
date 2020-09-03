@@ -1,0 +1,274 @@
+@import "../footer/footer3style.css";
+@import "../navbar/navbar.css";
+
+
+@font-face {
+  font-family: CustomFont1;
+  src: url(../assets/fonts/Fonts/sofiapro-light.otf);
+}
+
+*{
+  text-decoration: none;
+  outline: none;
+}
+body{
+  font-family: CustomFont1;
+}
+.pinkbox{
+height: 450px;
+width: 630px;
+background-color: #d9ebe9;
+margin: 80px auto;
+}
+#hire{
+    transform: translate(-10%,180%);
+}
+.contactpara{
+  font-weight: bold;
+	height: 100px;
+  width: 280px;
+  font-size: 20px;
+	text-align: justify;
+	transform: translate(20%,110%);
+}
+.firstimage{
+	height: 500px;
+	width: 270px;
+	float: right;
+	margin-top: -180px;
+}
+.contact{
+    font-weight: bold;
+  	margin-top: 60px;
+    padding: 70px 0;
+    background-color:  #eee2d7;
+}
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+.contact .heading h2 span {
+    color: black;
+}
+.contact .heading p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+}
+.contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #ff9100;
+    color: #ffffff;
+}
+.contact .title h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+.contact .content .info {
+  font-size: 20px;
+    margin-top: 30px;
+}
+.contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #02434b;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+.contact .content .info h4 {
+    font-size: 25px;
+    line-height: 1.4;
+}
+.contact .content .info h4 span {
+    font-size: 22px;
+    font-weight: 300;
+    color: black;
+}
+.logos{
+	height: 400px;
+	margin-bottom: 15vh;
+  margin-top: 15vh;
+  font-weight: bold;
+}
+.logos .row{
+	margin-left: 0px;
+  margin-right: 0px;
+  font-weight: bold;
+}
+
+.img1{
+  background-color: #9b4922;
+}
+.img1 a:hover{
+ color: white;
+}
+.img2{
+	background-color: #d8a790;
+	height: 400px;
+}
+.img2 a:hover{
+ color: white;
+}
+.img3{
+	background-color: #c88a36;
+	height: 400px;
+}
+.img3 a:hover{
+ color: white;
+}
+.bg-text{
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 30%; 
+  z-index: 2;
+  width: 200px;
+  text-align: center;
+}
+.questions{
+  padding-left: 40px;
+	height: 800px;
+	background-color: #fed8a3;
+}
+.questions h2{
+  font-weight: bolder !important;
+  padding-top: 20px;
+	text-align: center;
+}
+.questions .col-md-6 p{
+  font-weight: bold;
+	text-align: center;
+}
+.questions .cont{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+.questionbox{
+	background-color: white; 
+	height: 450px;
+	width: 500px;
+  float: left;
+  padding: 25px;
+  margin: 25px;
+}
+.questionbox p{
+	text-align: justify;
+}
+@media only screen  and (max-width:  800px){
+.pinkbox{
+    height: 350px;
+    width: 80%;
+    padding-top: 10px; 
+}
+.firstimage{
+    height:305px;
+    width: 200px;
+    margin-top: 16vh;
+    margin-right: -30px;
+   
+}
+#hire{
+    font-size: 2.0rem;
+    transform: translate(-10%,0%);
+}
+.contactpara{
+    padding: 20px;
+    font-size: 15px;
+    height: 80px;
+    width: 80%;
+    transform: translate(0%,0%);
+}
+.contact{
+    margin-top: 45vh;
+    padding: 50px 0;
+}
+.contact .content{
+ 
+	margin-bottom: 30px;
+}
+.img1{
+	height: 200px;
+}
+.img2{
+	height: 200px;
+}
+.img3{
+	height: 200px;
+}
+.bg-text{
+  top: 20%;
+  left: 20%;
+}
+.logos{
+  height: 650px;
+}
+.questions{
+  padding: 10px;
+  height: 100%;
+}
+.questions .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.questions .row h2{
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+.questions .cont{
+  padding-left: 0;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 20px;
+  margin: 0;
+   margin-top: 10vh;
+}
+.questionbox{
+
+  margin-left: 0;
+  width: 100%;
+  height: fit-content;
+  margin: 0px;
+  float: left !important;
+}
+.questionbox h4{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.questionbox p span{
+  text-align: right; 
+  font-size: 11px;
+}
+}   	

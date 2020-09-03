@@ -1,0 +1,124 @@
+.player {
+  position: absolute;
+  width: 330px;
+  height: 480px;
+  left: 22%;
+  bottom: 50%;
+  border-radius: 15px;
+  background-color: #fff6e7;
+  box-shadow: 0 15px 20px 0 #8b0000;
+}
+ .player input[type="range"] {
+    -webkit-appearance: none !important;
+    margin: 0px;
+    padding: 0px;
+    background: #f2eae4;
+    height: 5px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+ .player input[type="range"]::-ms-fill-lower {
+    background: #f2eae4;
+  }
+
+ .player input[type="range"]::-ms-fill-upper {
+    background: #f2eae4;
+  }
+
+ .player input[type="range"]::-moz-range-track {
+    border: none;
+    background: #f2eae4;
+  }
+
+ .player input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #ff3677;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    box-shadow: -100vw 0 0 100vw #f7d9b9;
+  }
+
+ .player input[type="range"]::-moz-range-thumb {
+    background: #ff3677;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+
+ .player input[type="range"]::-ms-thumb {
+    -webkit-appearance: none !important;
+    background: #ff3677;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+
+ .player .cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 27%;
+    top: 30px;
+    box-shadow: 0 5px 20px 0 #d56c006d;
+}
+  .player .cover  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+
+ .player .info {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    text-align: center;
+}
+   .player .info .title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #444;
+      margin-bottom: 2px;
+    }
+
+   .player .info .singer {
+      font-size: 12px;
+      color: #72646f;
+    }
+
+
+
+ .player .music-box {
+    position: absolute;
+    left: 50%;
+    top: 345px;
+    transform: translateX(-50%);
+}
+
+
+  
+
+
+    @media(max-width:800px)
+    {
+      .player {
+  position: absolute;
+  width: 80%;
+  height: 480px;
+  left: 10%;
+  bottom: 50%;
+  border-radius: 15px;
+  background-color: #fff6e7;
+  box-shadow: 0 15px 20px 0 #8b0000;
+}
+
+
+
+    }

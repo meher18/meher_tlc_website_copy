@@ -1,0 +1,469 @@
+
+@import "../navbar/navbar.css";
+@import "../footer/footer3style.css";
+
+
+@font-face {
+  font-family: CustomFont1;
+  src: url(../assets/fonts/Fonts/sofiapro-light.otf);
+}
+
+*{
+  font-family: CustomFont1;
+}
+*:focus{
+  outline: none;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+
+header >video {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
+
+
+.mejs__container {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  min-width: auto !important;
+}
+.mejs__controls {
+  padding: 0 10%;
+  background: transparent !important;
+  display: block;
+  position: relative;
+}
+.mejs__controls div {
+  display: block;
+  float: left;
+  position: relative;
+}
+.mejs__controls .mejs__playpause-button {
+  position: absolute !important;
+  right: 45%;
+  bottom: 95%;
+  width: 40px;
+}
+.mejs__controls .mejs__playpause-button button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  font-family: FontAwesome;
+  font-size: 50px;
+  color: #655c5a;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+.mejs__controls .mejs__play button:before {
+  content: "\f04b";
+}
+.mejs__controls .mejs__pause button:before {
+  content: "\f04c";
+}
+.mejs__controls .mejs__volume-button >button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #655c5a;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+.mejs__controls .mejs__mute button:before {
+  content: "\f028";
+}
+.mejs__controls .mejs__unmute button:before {
+  content: "\f026";
+}
+.mejs__controls .mejs__time {
+  width: 100%;
+  margin-top: 7%;
+  margin-bottom: 3%;
+  color: #000;
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  min-width: 100%;
+}
+.mejs__controls .mejs__time >span {
+  font-size: 15px;
+}
+.mejs__controls span.mejs__duration {
+  float: right;
+  text-align: right;
+  color: #555;
+}
+.mejs__controls span.mejs__currenttime {
+  font-weight: 700;
+  float: left;
+}
+.mejs__controls .mejs__time-rail {
+  width: 100%;
+  margin: 0;
+}
+.mejs__controls .mejs__time-rail > span {
+  position: absolute !important;
+  top: 5px;
+  width: 100%;
+  height: 10px !important;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #fed8a3;
+}
+.mejs__controls .mejs__time-rail .mejs__time-loaded {
+ 
+  background: #d9ebe9;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float {
+  display: none;
+  top: -40px;
+  width: 45px;
+  padding: 2px;
+  height: 25px;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 13px;
+  background: #fff;
+  border: 0;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-current {
+  display: block;
+  position: relative;
+  top: 0;
+  margin: 0;
+  line-height: 26px;
+  color: #100d28;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-corner {
+  top: auto;
+  bottom: -9px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 6px solid #fff;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.mejs__controls .mejs__time-rail .mejs__time-current {
+  background: #655c5a none repeat scroll 0 0;
+}
+.mejs__time-total .mejs__time-slider {
+  outline: none !important;
+  text-decoration: none !important;
+}
+.mejs__controls .mejs__time-handle {
+  display: none;
+}
+.mejs__controls .mejs__volume-button {
+  position: relative;
+  position: absolute !important;
+  top: 70px;
+  right: 25%;
+  width: 40px;
+  height: 40px;
+}
+.mejs__controls .mejs__horizontal-volume-slider {
+  display: block;
+  position: absolute !important;
+  position: relative;
+  top: 70px;
+  right: 8%;
+  width: 60px;
+  height: 5px;
+  margin-top: 18px;
+  border-radius: 50px;
+  line-height: 11px;
+}
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-total,
+.mejs__controls
+  .mejs__horizontal-volume-slider
+  .mejs__horizontal-volume-current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d9ebe9;
+}
+.mejs__controls
+  .mejs__horizontal-volume-slider
+  .mejs__horizontal-volume-current {
+  background: #fab0a0;
+}
+
+/* 
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    margin-bottom: 0px;
+    height: 0%;
+  }
+  header video {
+    display: none;
+  }
+} */
+
+
+.my-5 img{
+    cursor: pointer;
+  height: 400px;
+  width: 400px;
+  border-radius: 13px;
+}
+.my-5 .cont2 img{
+  float: right;
+}
+.my-5 h1{
+  cursor: pointer;
+  background-color: rgb(34, 33, 33);
+  z-index: 10;
+  border-radius: 10px;
+  width: 250px;
+  height: 100px;
+  padding-top: 20px;
+  font-weight: bold;
+  padding: 20px;
+   color: white;
+  text-align: center;
+  transform: translateY(-20px);
+  transition: background 300ms ease-in-out;
+ 
+}
+.my-5 h1:hover{
+
+   background-color: rgb(114, 114, 114);
+   color: black;
+}
+.my-5 .cont2 h1{
+  float: right;
+  margin-right:15%; 
+}
+.my-5 .cont1 h1{
+  margin-left: 15%;
+}
+.second{
+    font-size: 25px !important; 
+  height: fit-content;
+  width: 90%;
+  background-color: #fab0a0;
+ margin-right: auto;
+ margin-left: auto;
+ margin-top: 150px;
+}
+.second >p{
+  font-size: 15px !important; 
+  margin: 85px 30px;
+  text-align: justify;
+}
+.third{
+   font-size: 15px !important; 
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+}
+.third .podcast{
+  
+  height: fit-content;
+  display: flex;
+}
+.third .podcast-content{
+  position: relative;
+  height: 500px;
+  width: 600px;
+  background-color: #fed8a3; 
+  margin-left:33%;
+  margin-top: 25%;
+  border-radius: 40px;
+}
+.third .podcast-content .description{
+ height: 40%;
+  overflow: scroll;
+   position:absolute;
+   bottom: 20px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.third .box{
+  height: 250px;
+  width: 220px;
+  float: right;
+  background-image: linear-gradient( #fab0a0,#d9ebe9);
+}
+.third .box1{
+  height:  250px;
+  width: 220px;
+  background-image: linear-gradient(#fed8a3,#d9ebe9)
+}
+.fourth{
+  height: fit-content;
+  width: 90%;
+  background-color: #d9ebe9;
+  margin: 0 auto;
+
+}
+.fourth p{
+   font-size: 25px !important; 
+  margin: 80px 30px;
+  text-align: justify;
+}
+.podcast2{
+  margin-bottom: 40vh;
+  height: fit-content;
+}
+.podcast2-content{
+    position: relative;
+  height: 500px;
+  width: 600px;
+  background-color: #d9ebe9; 
+   border-radius: 40px;
+margin: 0 auto;
+margin-top: 20%;
+}
+.podcast2-content .description{
+
+   height: 40%;
+  overflow: scroll;
+   position:absolute;
+   bottom: 20px;
+}
+.description h2{
+text-align: center;
+}
+.description p{
+  padding: 10px 30px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+
+
+
+  header {
+  position: relative;
+  background-color: black;
+  height: 40vh;
+  min-height: 0rem;
+  width: 100%;
+ 
+  margin-bottom: 150px;
+}
+
+  header >video {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 200px;
+  height: 100% !important;
+  z-index: 0;
+  transform: translate(0);
+ 
+}
+
+
+.my-5 img{
+height:  300px;
+width: 100%;
+}
+.my-5 h1{
+  width: 70%;
+  height: 85px;
+  font-size: 2rem;
+}
+.my-5 .cont1{
+  margin-bottom: 30px;
+}
+.my-5 .cont2 img{
+  float: none;
+}
+.second{
+  font-size: 15px !important; 
+  margin-top: 90px;
+  width: 90%;
+  height: fit-content;
+}
+.second p{
+  margin: 10vh 0px;
+}
+.third{
+  width: 100%;
+  margin: 35vh auto;
+}
+.third .podcast-content{
+  margin-left: 0%;
+}
+.third .box,.box1{
+  display: none;
+}
+.podcast2{
+ margin-top: 50vh;
+}
+.podcast2-content{
+  width: 100%;
+ 
+}
+.podcast2-content .description {
+  height: 40%;
+  overflow: scroll;
+   position:absolute;
+   bottom: 20px;
+}
+.third .podcast-content .description {
+   height: 40%;
+  overflow: scroll;
+ position:absolute;
+   bottom: 20px;
+}
+.fourth p{
+    font-size: 15px !important; 
+}
+}

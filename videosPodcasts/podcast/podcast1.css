@@ -1,0 +1,536 @@
+@import "../../navbar/navbar.css";
+
+@import "../../footer/footer3style.css";
+
+
+@font-face {
+  font-family: CustomFont1;
+  src: url(../../assets/fonts/Fonts/sofiapro-light.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: CustomFont1;
+
+}
+
+body {
+  border: 15px solid white;
+  border-top: none !important;
+}
+
+*:focus {
+  outline: none;
+}
+.first {
+  background-color: #eee2d7;
+  height: 850px;
+}
+.image1 {
+  height: 500px;
+  width: 800px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+.image2 {
+  width: 290px;
+  margin-top: -270px;
+}
+.content1 {
+  display: inline-block;
+  font-size: 45px;
+  text-align: center;
+  height: 300px;
+  width: 450px;
+  padding-top: 30px;
+  background-color: white;
+  margin-left: -80px;
+  transform: translateY(30%);
+}
+.image3 {
+  
+  width: 400px;
+  height: 400px;
+  float: right;
+  margin-right: 100px;
+  margin-top: -180px;
+}
+.second {
+  height: 530px !important;
+  padding-top: 50px;
+}
+.second h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.second .container {
+  font-size: 20px;
+  text-align: justify;
+}
+.second .container .col-lg-6 {
+  padding: 50px;
+}
+
+.third {
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.third h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.podcast {
+  padding: 100px 40px 40vh 40px;
+  cursor: all-scroll;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 100%;
+}
+.third .podcast > div {
+  width: 45%;
+  border-radius: 10%;
+  margin-top: 300px;
+}
+
+.third .podcast .ones {
+  height: 700px !important;
+  border-radius: 10%;
+  background-color: #d9ebe9;
+}
+.third .podcast .twos {
+  height: 700px !important;
+  border-radius: 10%;
+  background-color: #fed8a3;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.third .podcast .description {
+  margin: auto;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 10%;
+  padding: 30px;
+ overflow: scroll;
+}
+.third .podcast .description p {
+  font-size: 20px;
+  height: 100%;
+
+}
+.third .podcast h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fourth {
+  position: relative;
+  height: fit-content;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  padding-top: 30px;
+}
+.fourth h1 {
+  text-align: center;
+}
+.fourth #button {
+  margin-top: 50px;
+  text-align: center;
+}
+.fifth {
+  padding-bottom: 20px;
+  background-color: #eee2d7;
+  height: fit-content;
+}
+.fifth .form {
+  width: 80%;
+  margin: 0 auto;
+}
+.fifth .form img {
+   width: 500px;
+  height: 450px;
+
+  margin-top: 100px;
+}
+.fifth #guide {
+  margin-top: 120px;
+  padding-left: 180px;
+}
+.fifth input {
+  width: 400px;
+  height: 40px;
+}
+.content p{
+  letter-spacing: 0.2rem;
+}
+.sixth {
+  height: fit-content;
+  padding-top: 50px;
+  color: white;
+}
+.sixth h1 {
+  text-align: center;
+}
+
+.mejs__button > button:focus {
+  outline: 0px dotted #999;
+}
+.mejs__container {
+  position: relative;
+  background-color: transparent;
+  min-width: auto !important;
+}
+.mejs__controls {
+  padding: 0 10%;
+  background: transparent !important;
+  display: block;
+  position: relative;
+}
+.mejs__controls div {
+  display: block;
+  float: left;
+  position: relative;
+}
+.mejs__controls .mejs__playpause-button {
+  position: absolute !important;
+  right: 45%;
+  bottom: 95%;
+  width: 40px;
+}
+.mejs__controls .mejs__playpause-button button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  font-family: FontAwesome;
+  font-size: 50px;
+  color: #655c5a;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+.mejs__controls .mejs__play button:before {
+  content: "\f04b";
+}
+.mejs__controls .mejs__pause button:before {
+  content: "\f04c";
+}
+.mejs__controls .mejs__volume-button button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #655c5a;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+.mejs__controls .mejs__mute button:before {
+  content: "\f028";
+}
+.mejs__controls .mejs__unmute button:before {
+  content: "\f026";
+}
+.mejs__controls .mejs__time {
+  width: 100%;
+  margin-top: 7%;
+  margin-bottom: 3%;
+  color: #000;
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  min-width: 100%;
+}
+.mejs__controls .mejs__time span {
+  font-size: 15px;
+}
+.mejs__controls span.mejs__duration {
+  float: right;
+  text-align: right;
+  color: #555;
+}
+.mejs__controls span.mejs__currenttime {
+  font-weight: 700;
+  float: left;
+}
+.mejs__controls .mejs__time-rail {
+  width: 100%;
+  margin: 0;
+}
+.mejs__controls .mejs__time-rail > span {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #fed8a3;
+}
+.mejs__controls .mejs__time-rail .mejs__time-loaded {
+  height: inherit !important;
+  background: #d9ebe9;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float {
+  display: none;
+  top: -40px;
+  width: 45px;
+  padding: 2px;
+  height: 25px;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 13px;
+  background: #fff;
+  border: 0;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-current {
+  display: block;
+  position: relative;
+  top: 0;
+  margin: 0;
+  line-height: 26px;
+  color: #100d28;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-corner {
+  top: auto;
+  bottom: -9px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 6px solid #fff;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.mejs__controls .mejs__time-rail .mejs__time-current {
+  background: #655c5a none repeat scroll 0 0;
+}
+.mejs__time-total .mejs__time-slider {
+  outline: none !important;
+  text-decoration: none !important;
+}
+.mejs__controls .mejs__time-handle {
+  display: none;
+}
+.mejs__controls .mejs__volume-button {
+  position: relative;
+  position: absolute !important;
+  top: 70px;
+  right: 25%;
+  width: 40px;
+  height: 40px;
+}
+.mejs__controls .mejs__horizontal-volume-slider {
+  display: block;
+  position: absolute !important;
+  position: relative;
+  top: 70px;
+  right: 8%;
+  width: 60px;
+  height: 5px;
+  margin-top: 18px;
+  border-radius: 50px;
+  line-height: 11px;
+}
+.mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-total,
+.mejs__controls
+  .mejs__horizontal-volume-slider
+  .mejs__horizontal-volume-current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d9ebe9;
+}
+.mejs__controls
+  .mejs__horizontal-volume-slider
+  .mejs__horizontal-volume-current {
+  background: #fab0a0;
+}
+
+@media (max-width: 800px) {
+  .navbar-brand img {
+    width: 50px;
+    height: inherit;
+  }
+
+  .navbar-brand {
+    font-size: 20px !important;
+    margin-left: 0px !important;
+  }
+
+  .navbar-nav {
+    font-size: 15px !important;
+    padding: 10px;
+    position: relative !important;
+    margin: unset;
+  }
+  .dropdown-menu {
+    background-color: white !important;
+  }
+  .dropdown-menu a {
+    color: black !important;
+    font-weight: bold !important;
+    padding: 20px !important;
+  }
+
+  .first {
+    position: relative;
+    background-color: #eee2d7;
+    height: 900px !important;
+  }
+  .image1 {
+    position: absolute;
+    top: 0px;
+    height: 200px;
+    width: 90%;
+    margin-left: 20px;
+  }
+  .image2 {
+    margin: 0;
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    right: 10px;
+  }
+  .content1 {
+    z-index: 2;
+    position: absolute;
+    top: 180px;
+    right: 10px;
+    display: inline-block;
+
+    text-align: center;
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+
+    background-color: white;
+  }
+  .content1 h1 {
+    font-size: 25px !important;
+  }
+  .content1 a button {
+    width: 150px;
+    font-size: 15px;
+  }
+  .image3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 30vh;
+    left: 0;
+     margin-right: 0px;
+     margin-top: 0px;
+  }
+  .second {
+    height: fit-content !important;
+    padding-top: 50px;
+  }
+  .second h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .second .container {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .second .container .col-lg-6 {
+    padding: 50px;
+  }
+
+  .third .podcast {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  .third .podcast > div {
+    border-radius: 5%;
+    position: relative;
+    width: 100%;
+    margin-top: 300px;
+  }
+
+  .third .podcast .ones {
+    border-radius: 5%;
+    height: 700px;
+    background-color: #fed8a3;
+  }
+  .third .podcast .twos {
+    border-radius: 5%;
+    height: 700px;
+    background-color: #d9ebe9;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .third .podcast .description {
+    margin: auto;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 10%;
+    padding: 30px;
+  }
+  .third .podcast .description p {
+    font-size: 20px;
+    height: 80%;
+  
+  }
+
+  .fourth {
+  position: relative;
+  height: fit-content;
+  margin-top: 5vh;
+  margin-bottom: 20vh;
+  padding-top: 30px;
+}
+
+  .fifth {
+    padding-bottom: 20px;
+    background-color: #eee2d7;
+    height: fit-content;
+  }
+  .fifth .form {
+    width: 100%;
+  }
+  .fifth .form .content {
+    margin: auto;
+    width: 90% !important;
+  }
+  .content p{
+    letter-spacing: 0;
+  }
+  .fifth .form img {
+    width: 100%;
+    height: 300px;
+    box-shadow: none;
+    margin-top: 40px;
+  }
+  .fifth #guide {
+    width: 80%;
+    padding-left: 20px;
+    margin-top: 120px;
+  }
+  .fifth input {
+    width: 100%;
+    height: 40px;
+  }
+}

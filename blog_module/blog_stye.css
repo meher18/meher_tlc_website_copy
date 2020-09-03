@@ -1,0 +1,234 @@
+
+@import "../footer/footer3style.css";
+@import "../navbar/navbar.css";
+
+@font-face {
+  font-family: CustomFont1;
+  src: url(../assets/fonts/Fonts/sofiapro-light.otf);
+}
+
+body {
+  font-family: CustomFont1 ;
+  background-color: #d9ebe9;
+
+  border: 18px solid white;
+  border-top: none;
+}
+
+
+
+.pagination1 {
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagination1 nav {
+  margin-right: 20px;
+  font-weight: bold;
+  display: flex !important;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  width: 30vh;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.pagination1 nav ul li a {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px !important;
+}
+.pagination1 nav ul li a:hover {
+  background-color: white !important ;
+}
+.pagination1 > h4 {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.blogs-block {
+  margin: 10px 10%;
+}
+.blogs-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.blog {
+ 
+  background-color: white;
+  position: relative;
+  margin: 50px 20px;
+  width: 380px;
+  height: 610px;
+  padding: 15px;
+}
+.blog-image {
+  width: fit-content;
+  transform: translateY(-1.5rem);
+}
+.blog > div {
+  width: fit-content;
+}
+.blog > div img {
+  width: inherit;
+  height: inherit;
+}
+.blog-block1 {
+  margin: 5px 20px;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.blog-block1 span p {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  margin-left: 20px;
+  line-height: 0.2rem;
+}
+.blog-block1 img {
+  width: 50px !important;
+  height: 50px !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: coral;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: coral;
+}
+.blog-title {
+  color: #555;
+  text-align: left;
+  width: inherit;
+  padding: 5px 20px;
+  height: 130px;
+  margin: 10px 0px;
+  cursor: all-scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+.blog-title:hover {
+  color: rgb(34, 148, 255);
+}
+
+.blog-tools {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.blog-tools > div {
+  margin: 0px 10px;
+  cursor: pointer;
+  display: inline-flex;
+}
+.blog-tools > div i {
+  margin: 0px 8px;
+}
+.blog-tools > div p {
+  font-size: 13px;
+}
+.comment {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+}
+.heart img {
+  width: 30px !important;
+  height: 30px !important;
+}
+.blog-share {
+  cursor: pointer;
+  margin: auto;
+  padding: 15px;
+  text-decoration: underline !important;
+}
+.blog-share:hover {
+  color: rgb(97, 97, 243) !important;
+}
+.blog-share:active {
+  transform: scale(0.9);
+}
+
+.pagination2 {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pagination2 nav {
+  display: flex !important;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 30vh;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.pagination2 nav ul li a {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px !important;
+}
+.pagination2 nav ul li a:hover {
+  background-color: white !important ;
+}
+
+/* /footer */
+
+@media (max-width: 800px) {
+  .blog-block1 {
+  margin: 5px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+  .blog {
+ 
+  background-color: white;
+  position: relative;
+  margin: 50px 0px;
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+}
+}

@@ -1,0 +1,183 @@
+
+
+@font-face {
+  font-family: CustomFont1;
+  src: url(assets/fonts/Fonts/sofiapro-light.otf);
+}
+
+
+footer {
+	font-family: CustomFont1 !important;
+  position: relative;
+  background-color: #1c1c1c;
+   color: white;
+   height: fit-content;
+   padding-bottom: 20px;
+   }
+   footer h1{
+  
+   	text-align: center;
+   	font-weight: bolder !important;
+   padding: 10vh 0px;
+   }
+  footer .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto; 
+ 
+  width: 1400px;
+  margin: 0 auto;
+}
+footer .grid-item {
+   
+  padding: 5px 3px;
+text-align: center;
+  
+}
+footer .grid-item img{
+  height: 180px;
+  width: 180px;
+}
+footer .detail{
+width: 1400px;
+height:fit-content;
+margin: 20px auto;
+}
+footer .detail h4{
+
+	letter-spacing: 0.3rem !important;
+	font-weight: bold;
+	margin-top: 30px;
+}
+footer .detail button{
+margin-top: 30px;
+font-weight: bold;
+}
+footer .detail .column{
+  width: 700px;
+  height: 310px;
+  margin-left: 15px;
+
+}
+footer .detail .column1{
+	margin-top: 30px;
+  width: 700px;
+  height: 310px;
+}
+footer .detail .column1 #info{
+	text-align: right;
+}
+footer .detail .column1 .icons i{
+	color: white;
+	margin: 5px 10px;
+}
+footer .detail #info p span{
+	font-weight: bold;
+	letter-spacing: 0.3rem;
+	font-size: 20px;
+}
+footer .detail #info p #faq{
+margin-right: 20px;
+margin-left: 20px;
+	}
+footer .detail #info p #blog{
+text-decoration: underline;
+	}
+footer .detail #query{
+	font-size: 20px;
+	margin-top: 30px;
+}
+.copyright {
+background-color: #1c1c1c;
+font-size:20px;
+}
+.copyright #about{
+margin-right: 5px;
+margin-left: 10px;
+}
+.copyright #terms{
+	margin-right: 5px;
+}
+.copyright #top{
+	margin-right: 5px;
+}
+footer hr{
+width: 1400px;
+background-color: white;
+height: 1px; 
+margin-top: 80px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 1000px){
+  footer{
+    width: 100% ;
+    height: fit-content;
+  }
+footer h1{
+	font-size: 4vh;
+	text-align: center;
+}
+footer .grid-container{
+	margin-top: 40px !important;
+	grid-template-columns: auto auto; 
+    width: 300px;
+}
+footer .grid-item img{
+	width: 120px;
+	height: 100px;
+}
+footer hr{
+	width: 300px;
+	margin-top: 40px;
+}
+footer .detail{
+	width: 300px;
+	margin-top: 40px;
+}
+footer .detail .column{
+width: 300px;
+height: 150px;
+}
+footer .detail .column h4{
+	letter-spacing: 0;
+	font-size: 15px;
+	margin-left: 7px;
+	margin-top: 10px;
+}
+footer .detail .column button{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+footer .detail .column1{
+width: 300px;
+height: 320px;
+margin-left: 25px;
+font-size: 2vh;
+margin-top: 40px;
+}
+footer .detail .column1 p{
+	margin-top: 20px;
+}
+footer .detail .column1 p span{
+	margin-bottom: 0.5rem;
+}
+footer .detail #query{
+	margin-top: 40px;
+}
+footer .detail .row{
+	height: fit-content;
+}
+footer .detail .column1 .icons{
+	margin-bottom: 17px;
+}
+.copyright{
+	width: 320px;
+	height: fit-content;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 20vh;
+
+    
+}
+
+} 

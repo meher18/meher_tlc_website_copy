@@ -1,0 +1,20 @@
+<?php  
+ session_start();
+ include("../config/config.php");
+
+ $id=$_GET['id'];
+
+ 
+if(isset($_SESSION['email']))
+{
+     
+ $query="delete from event_comments where comment_id=$id";
+ $exec=mysqli_query($con,$query);
+ if($exec)
+ {
+     echo "deleted";
+ }
+
+}
+
+?>
