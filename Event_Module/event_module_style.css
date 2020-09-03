@@ -1524,8 +1524,9 @@ background-color: #eee2d7;
   width: 90%;
   padding: 10px;
   height: 80%;
-
+  line-height: 1.1rem;
   word-spacing: 0.2rem;
+  letter-spacing: normal;  
   overflow: scroll;
   font-size: 15px;
   font-weight: bolder !important;
